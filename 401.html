@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Mon Apr 16 2018 01:54:25 GMT+0000 (UTC)  -->
-<html data-wf-page="5ad2a5a4d8ce02272e7bc6d5" data-wf-site="5ad2a5a4d8ce029e397bc6d1">
+<html data-wf-page="5ad2a6733265e9250b4499b1" data-wf-site="5ad2a5a4d8ce029e397bc6d1">
 <head>
   <meta charset="utf-8">
-  <title>connortoler.me</title>
+  <title>Protected page</title>
+  <meta content="Protected page" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -23,29 +24,21 @@
   }}();
 </script>
 </head>
-<body class="body">
-  <div class="header-section">
-    <div class="container w-container">
-      <h1 class="heading">CONNOR EDWARD TOLER</h1>
-      <p class="subtitle">I broke a lot of things before I could build some</p>
-      <div class="sign-up-form w-form">
-        <form name="wf-form-formListctoler" data-name="formListctoler" id="emailForm" class="w-clearfix"><input type="email" name="email" data-name="Email" placeholder="Want to chat?" maxlength="256" required="" class="field w-input"><input type="submit" value="Sure" data-wait="Please wait..." class="button w-button"></form>
-        <div class="success-message w-form-done">
-          <p class="paragraph">You&#x27;ll hear about me soon.</p>
-        </div>
-        <div class="error-message w-form-fail">
-          <p>Something broke... try again?</p>
-        </div>
+<body>
+  <div class="utility-page-wrap">
+    <div class="utility-page-content w-password-page w-form">
+      <form method="post" action="/.wf_auth" class="utility-page-form w-password-page"><img src="https://d3e54v103j8qbb.cloudfront.net/static/password-page-lock.832ca8e2c9.svg">
+        <h2>Protected page</h2>
+        <div style="display:none" class="w-password-page w-embed w-script"><input type="hidden" name="path" value="<%WF_FORM_VALUE_PATH%>"><input type="hidden" name="page" value="<%WF_FORM_VALUE_PAGE%>"></div><input type="password" name="pass" placeholder="Enter your password" maxlength="256" autofocus="true" class="w-password-page w-input"><input type="submit" value="Submit" data-wait="Please wait..." class="w-password-page w-button"></form>
+      <div class="w-password-page w-form-fail">
+        <div>Incorrect password. Please try again.</div>
       </div>
-    </div>
-  </div>
-  <div class="footer-section">
-    <div class="w-container">
-      <div class="w-row">
-        <div class="w-col w-col-6 w-col-small-6">
-          <div class="copyright">© 2018 Connor Toler. All right reserved. </div>
-        </div>
-        <div class="align-right w-col w-col-6 w-col-small-6"><a href="http://facebook.com/connoredwardtoler" target="_blank" class="social-btn w-inline-block"><img src="images/facebook-icon.svg" class="image"></a><a href="http://twitter.com/connoretoler" class="social-btn w-inline-block"><img src="images/twitter-icon.svg"></a><a href="http://github.com/connortoler" target="_blank" class="social-btn w-inline-block"><img src="images/GitHub-Mark-Light-120px-plus.png" width="18"></a><a href="http://linkedin.com/in/connortoler" target="_blank" class="social-btn w-inline-block"><img src="images/In-White-28px-R.png" width="22" class="image"></a></div>
+      <div style="display:none" class="w-password-page w-embed w-script">
+        <script type="application/javascript">(function _handlePasswordPageOnload() {
+	  if (/[?&]e=1(&|$)/.test(document.location.search)) {
+	    document.querySelector('.w-password-page.w-form-fail').style.display = 'block';
+	  }
+	})()</script>
       </div>
     </div>
   </div>
